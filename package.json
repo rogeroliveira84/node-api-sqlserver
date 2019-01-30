@@ -1,0 +1,32 @@
+{
+  "name": "node-api-sqlserver",
+  "version": "1.0.0",
+  "description": "Node SQL Server API Backend Application",
+  "private": true,
+  "main": "./src/server.js",
+  "engines": {
+    "node": "10.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.0",
+    "helmet": "^3.13.0",
+    "mssql": "^4.2.1"
+  },
+  "scripts": {
+    "debug": "node --nolazy --inspect-brk=9229 ./src/server.js",
+    "start": "set NODE_ENV=dev && nodemon ./src/server.js",
+    "start-prod": "set NODE_ENV=prod && nodemon ./build/server.js",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": {
+    "name": "Roger Oliveira",
+    "email": "rogeroliveira84@gmail.com"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
