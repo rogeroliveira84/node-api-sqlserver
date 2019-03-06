@@ -6,7 +6,7 @@ const _codeNotFoundError = 404;
 const _codeGeneralError = 500;
 
 const _msgWelcomeMessage = 'Welcome to Node SQL Server API Backend Application';
-const _msgCouldNotRegisterData = 'Could not register data!';
+const _msgCouldNotRegisterData = 'Could not insert data!';
 
 const _sqlGetClients = () => { return `SELECT ClientId, ClientName, BirthDate, CreatedOn FROM dbo.Client` };
 const _sqlGetClientById = (clientId) => { return `SELECT ClientId, ClientName, BirthDate, CreatedOn FROM dbo.Client WHERE ClientId=${clientId}` };

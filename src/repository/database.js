@@ -2,10 +2,11 @@ var sql = require("mssql");
 
 //Initiallising connection string
 var dbConfig = {
-    user: "user",
-    password: "password",
-    server: "server",
-    database: "database",
+    user: 'test',
+    password: 'test123',
+    server: 'localhost\\sqlexpress',
+    database: 'node_api_test',
+    port: 1433,
     options: {
         encrypt: false
     }
